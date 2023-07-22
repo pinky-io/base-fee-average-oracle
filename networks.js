@@ -21,7 +21,7 @@ if (!isTestEnvironment && !PRIVATE_KEY) {
 
 const networks = {
   ethereumSepolia: {
-    url: process.env.ETHEREUM_SEPOLIA_RPC_URL || "UNSET",
+    url: process.env.SEPOLIA_RPC_URL || "UNSET",
     gasPrice: undefined,
     accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
     verifyApiKey: process.env.ETHERSCAN_API_KEY || "UNSET",
